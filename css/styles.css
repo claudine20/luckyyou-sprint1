@@ -1,0 +1,303 @@
+/* ===============================
+   LuckyYou — Estilos principales
+   Archivo: css/styles.css
+   =============================== */
+
+/* 🎯 VARIABLES DE COLOR Y LAYOUT */
+:root {
+  --color-principal: #0b6efd;     /* Azul principal */
+  --color-secundario: #222;       /* Texto principal */
+  --color-fondo: #f9f9f9;         /* Fondo general */
+  --color-blanco: #fff;
+  --color-gris: #666;
+  --max-ancho: 1100px;
+}
+
+/* 🔧 RESETEO BÁSICO */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: var(--color-secundario);
+  background-color: var(--color-fondo);
+  line-height: 1.6;
+}
+
+/* ===============================
+   ESTRUCTURA GENERAL
+   =============================== */
+.container {
+  max-width: var(--max-ancho);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===============================
+   CABECERA
+   =============================== */
+.site-header {
+  background-color: var(--color-blanco);
+  border-bottom: 1px solid #eee;
+  padding: 10px 20px;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: var(--color-principal);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   SECCIÓN HERO
+   =============================== */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #eef4ff;
+  border-bottom: 1px solid #ddd;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  color: var(--color-principal);
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #094db1;
+}
+
+/* ===============================
+   SECCIÓN QUIÉNES SOMOS
+   =============================== */
+#sobre {
+  background-color: var(--color-fondo);
+  padding: 40px 20px;
+}
+
+#sobre h2 {
+  text-align: center;
+  color: var(--color-principal);
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   SECCIÓN SERVICIOS
+   =============================== */
+#servicios {
+  padding: 40px 20px;
+}
+
+#servicios h2 {
+  text-align: center;
+  color: var(--color-principal);
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: var(--color-blanco);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: var(--color-principal);
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   SECCIÓN TARIFAS
+   =============================== */
+#tarifas {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+#tarifas h2 {
+  text-align: center;
+  color: var(--color-principal);
+  margin-bottom: 30px;
+}
+
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.price-card {
+  background-color: var(--color-blanco);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+  transform: scale(1.05);
+}
+
+.price-card h4 {
+  color: var(--color-principal);
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.price-card p {
+  font-size: 1.1rem;
+  color: var(--color-secundario);
+}
+
+/* ===============================
+   FORMULARIO DE CONTACTO
+   =============================== */
+#contacto {
+  padding: 40px 20px;
+  background-color: var(--color-fondo);
+}
+
+#contacto h2 {
+  text-align: center;
+  color: var(--color-principal);
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: var(--color-blanco);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+form label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 4px;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button.btn {
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#formMessage {
+  margin-top: 15px;
+  text-align: center;
+  color: var(--color-principal);
+  font-weight: 600;
+}
+
+/* ===============================
+   PIE DE PÁGINA
+   =============================== */
+.site-footer {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  padding: 15px 10px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-gris);
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+   =============================== */
+@media (max-width: 768px) {
+  .nav a {
+    margin-left: 10px;
+  }
+
+  .cards, .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+
+  .hero {
+    padding: 40px 10px;
+  }
+
+  .btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+}
