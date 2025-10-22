@@ -1,72 +1,102 @@
-<!doctype html>
-</nav>
-</div>
-</header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuckyYou — Branding & SEO/SEM</title>
 
+  <!-- Enlace a tu archivo CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
-<main>
-<section id="hero" class="hero container">
-<h1>LuckyYou — Marketing que convierte</h1>
-<p>Branding + SEO/SEM para marcas que quieren crecer globalmente.</p>
-<a class="btn" href="#contacto">Solicita presupuesto</a>
-</section>
+<body>
+  <!-- Encabezado -->
+  <header class="site-header">
+    <div class="container">
+      <img src="assets/logo.png" alt="Logo LuckyYou" class="logo">
+      <nav class="nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#tarifas">Tarifas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
+  <!-- Sección principal -->
+  <main>
+    <section id="hero" class="hero container">
+      <h1>LuckyYou — Marketing que convierte</h1>
+      <p>Branding + SEO/SEM para marcas que quieren crecer globalmente.</p>
+      <a class="btn" href="#contacto">Solicita presupuesto</a>
+    </section>
 
-<section id="sobre" class="container">
-<h2>Quiénes somos</h2>
-<p>Combinamos creatividad y analítica para impulsar marcas.</p>
-</section>
+    <section id="sobre" class="container">
+      <h2>Quiénes somos</h2>
+      <p>Combinamos creatividad y analítica para impulsar marcas con personalidad y resultados medibles.</p>
+    </section>
 
+    <section id="servicios" class="container">
+      <h2>Servicios</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Branding</h3>
+          <p>Identidad visual, naming y estrategia de marca.</p>
+        </article>
+        <article class="card">
+          <h3>SEO</h3>
+          <p>Optimización de contenido, auditorías técnicas y mejora del posicionamiento.</p>
+        </article>
+        <article class="card">
+          <h3>SEM</h3>
+          <p>Campañas publicitarias eficaces y controladas por resultados.</p>
+        </article>
+      </div>
+    </section>
 
-<section id="servicios" class="container">
-<h2>Servicios</h2>
-<div class="cards">
-<article class="card">
-<h3>Branding</h3>
-<p>Identidad, activos y guía de marca.</p>
-</article>
-<article class="card">
-<h3>SEO</h3>
-<p>Auditorías, optimización y contenidos.</p>
-</article>
-<article class="card">
-<h3>SEM</h3>
-<p>Campañas y optimización de rendimiento.</p>
-</article>
-</div>
-</section>
+    <section id="tarifas" class="container">
+      <h2>Tarifas</h2>
+      <div class="pricing">
+        <div class="price-card">
+          <h4>Branding Start</h4>
+          <p>1.200 €</p>
+        </div>
+        <div class="price-card">
+          <h4>SEO Visibility</h4>
+          <p>600 €/mes</p>
+        </div>
+        <div class="price-card">
+          <h4>SEM Starter</h4>
+          <p>500 € setup</p>
+        </div>
+      </div>
+    </section>
 
+    <section id="contacto" class="container">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <label>Nombre:
+          <input type="text" name="name" required>
+        </label>
+        <label>Email:
+          <input type="email" name="email" required>
+        </label>
+        <label>Mensaje:
+          <textarea name="message" required></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+      <div id="formMessage" aria-live="polite"></div>
+    </section>
+  </main>
 
-<section id="tarifas" class="container">
-<h2>Tarifas</h2>
-<div class="pricing">
-<div class="price-card"><h4>Branding Start</h4><p>1.200 €</p></div>
-<div class="price-card"><h4>SEO Visibility</h4><p>600 €/mes</p></div>
-<div class="price-card"><h4>SEM Starter</h4><p>500 € setup</p></div>
-</div>
-</section>
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <div class="container">
+      © 2025 LuckyYou — Todos los derechos reservados
+    </div>
+  </footer>
 
-
-<section id="contacto" class="container">
-<h2>Contacto</h2>
-<form id="contactForm">
-<label>Nombre<input type="text" name="name" required></label>
-<label>Email<input type="email" name="email" required></label>
-<label>Mensaje<textarea name="message" required></textarea></label>
-<button type="submit" class="btn">Enviar</button>
-</form>
-<div id="formMessage" aria-live="polite"></div>
-</section>
-
-
-</main>
-
-
-<footer class="site-footer">
-<div class="container">© LuckyYou — 2025</div>
-</footer>
-
-
-<script src="js/main.js"></script>
+  <!-- Enlace a tu archivo JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>
